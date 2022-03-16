@@ -58,6 +58,8 @@
 
     
     
+    <link rel="prev" href="Friend.html" />
+    
 
     </head>
     <body>
@@ -83,8 +85,6 @@
 
     
         
-        <li class="header">* Introduction</li>
-        
         
     
         <li class="chapter " data-level="1.1" data-path="../">
@@ -100,20 +100,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.2" data-path="../Service.html">
-            
-                <a href="../Service.html">
-            
-                    
-                    Service
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="1.3" data-path="../Request.html">
+        <li class="chapter " data-level="1.2" data-path="../Request.html">
             
                 <a href="../Request.html">
             
@@ -126,7 +113,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.4" data-path="../Result.html">
+        <li class="chapter " data-level="1.3" data-path="../Result.html">
             
                 <a href="../Result.html">
             
@@ -139,21 +126,47 @@
             
         </li>
     
-        <li class="chapter " data-level="1.5" >
+        <li class="chapter " data-level="1.4" data-path="../Service.html">
             
-                <span>
+                <a href="../Service.html">
+            
+                    
+                    Service
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="init.html">
+            
+                <a href="init.html">
             
                     
                     entities
             
-                </span>
+                </a>
             
 
             
             <ul class="articles">
                 
     
-        <li class="chapter active" data-level="1.5.1" data-path="User.html">
+        <li class="chapter " data-level="1.5.1" data-path="Friend.html">
+            
+                <a href="Friend.html">
+            
+                    
+                    Friend
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.5.2" data-path="User.html">
             
                 <a href="User.html">
             
@@ -218,20 +231,17 @@
                                 
                                 <h1 id="user">User</h1>
 <p>&#x7528;&#x6237;&#x5B9E;&#x4F53;&#x7C7B;</p>
-<pre><code class="lang-lua">user = {
-    name = <span class="hljs-string">&quot;zzp&quot;</span>,
-    age = <span class="hljs-number">18</span>,
-    money = <span class="hljs-number">100000000</span>,
-    sex = <span class="hljs-string">&quot;male&quot;</span>,
-    friends = [
-        <span class="hljs-string">&quot;apple&quot;</span>,
-        <span class="hljs-string">&quot;orange&quot;</span>,
-        <span class="hljs-string">&quot;banana&quot;</span>
-    ]
-}
-</code></pre>
 <h2 id="&#x7D22;&#x5F15;">&#x7D22;&#x5F15;</h2>
+<ul>
+<li>name <strong>string</strong> &#x59D3;&#x540D;</li>
+<li>age <strong>number</strong> &#x5E74;&#x9F84;</li>
+<li>sex <strong>string</strong> &#x6027;&#x522B;</li>
+<li>friends <strong>list</strong> &#x597D;&#x53CB; <a href="Friend.html">Friend</a> </li>
+</ul>
 <h2 id="&#x8BE6;&#x7EC6;&#x4FE1;&#x606F;">&#x8BE6;&#x7EC6;&#x4FE1;&#x606F;</h2>
+<pre><code class="lang-lua"><span class="hljs-keyword">local</span> user=User()
+<span class="hljs-built_in">print</span>(user.sex)
+</code></pre>
 
                                 
                                 </section>
@@ -259,6 +269,10 @@
 
             
                 
+                <a href="Friend.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: Friend">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
                 
             
         
@@ -267,7 +281,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"User","level":"1.5.1","depth":2,"previous":{"title":"entities","level":"1.5","depth":1,"ref":"","articles":[{"title":"User","level":"1.5.1","depth":2,"path":"entities/User.md","ref":"entities/User.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"entities/User.md","mtime":"2022-03-16T06:59:16.718Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-03-16T07:41:30.439Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"User","level":"1.5.2","depth":2,"previous":{"title":"Friend","level":"1.5.1","depth":2,"path":"entities/Friend.md","ref":"entities/Friend.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"entities/User.md","mtime":"2022-03-16T09:20:04.159Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-03-16T09:20:08.449Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
