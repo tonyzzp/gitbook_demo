@@ -10,7 +10,14 @@
 ## 详细信息
 
 ```lua
-local user=User()
-print(user.sex)
+user = {
+    name = "zzp",
+    age = 18,
+    sex = "male",
+    friends = [
+        {sex = "male", age = 10},
+        {sex = "female", age = 100}
+    ]
+}
 ```
 
