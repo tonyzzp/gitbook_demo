@@ -57,10 +57,10 @@
     <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="entities/init.html" />
+    <link rel="next" href="entities.html" />
     
     
-    <link rel="prev" href="Result.html" />
+    <link rel="prev" href="./" />
     
 
     </head>
@@ -102,33 +102,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.2" data-path="Request.html">
-            
-                <a href="Request.html">
-            
-                    
-                    Request
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="1.3" data-path="Result.html">
-            
-                <a href="Result.html">
-            
-                    
-                    Result
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter active" data-level="1.4" data-path="Service.html">
+        <li class="chapter active" data-level="1.2" data-path="Service.html">
             
                 <a href="Service.html">
             
@@ -141,9 +115,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.5" data-path="entities/init.html">
+        <li class="chapter " data-level="1.3" data-path="entities.html">
             
-                <a href="entities/init.html">
+                <a href="entities.html">
             
                     
                     entities
@@ -152,28 +126,28 @@
             
 
             
-            <ul class="articles">
-                
+        </li>
     
-        <li class="chapter " data-level="1.5.1" data-path="entities/Friend.html">
+        <li class="chapter " data-level="1.4" data-path="phone/init.html">
             
-                <a href="entities/Friend.html">
+                <a href="phone/init.html">
             
                     
-                    Friend
+                    phone
             
                 </a>
             
 
             
-        </li>
+            <ul class="articles">
+                
     
-        <li class="chapter " data-level="1.5.2" data-path="entities/User.html">
+        <li class="chapter " data-level="1.4.1" data-path="phone/PhoneService.html">
             
-                <a href="entities/User.html">
+                <a href="phone/PhoneService.html">
             
                     
-                    User
+                    PhoneService
             
                 </a>
             
@@ -231,34 +205,41 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="service">Service</h1>
-<p>system service</p>
+                                <h1 id="Service">Service </h1>
+<p>service</p>
 <h2 id="&#x7D22;&#x5F15;">&#x7D22;&#x5F15;</h2>
+<h3 id="&#x5C5E;&#x6027;">&#x5C5E;&#x6027;</h3>
+<ul>
+<li><a href="#Service_status">status</a> <strong>string</strong> &#x72B6;&#x6001;</li>
+<li><a href="#Service_localPort">localPort</a> <strong>number</strong> &#x672C;&#x5730;&#x7AEF;&#x53E3;</li>
+</ul>
 <h3 id="&#x65B9;&#x6CD5;">&#x65B9;&#x6CD5;</h3>
 <ul>
-<li><p><a href="#start">start</a>  start service</p>
-</li>
-<li><p><a href="#getUsers">getUsers</a>  &#x83B7;&#x53D6;&#x6240;&#x6709;&#x7528;&#x6237;&#x5217;&#x8868;</p>
-</li>
+<li><a href="#Service_getUsers">getUsers</a>  &#x83B7;&#x53D6;&#x7528;&#x6237;&#x5217;&#x8868;</li>
+<li><a href="#Service_connect">connect</a>  &#x8FDE;&#x63A5;&#x670D;&#x52A1;</li>
 </ul>
 <h2 id="&#x8BE6;&#x7EC6;&#x4FE1;&#x606F;">&#x8BE6;&#x7EC6;&#x4FE1;&#x606F;</h2>
+<h3 id="&#x5C5E;&#x6027;">&#x5C5E;&#x6027; </h3>
+<h4 id="Service_status">status </h4>
+<p>&#x72B6;&#x6001;
+&#x7C7B;&#x578B;: <strong>string</strong></p>
+<table><thead><tr><th width="150">meta</th><th>description</th></tr></thead><tbody>
+<tr><td>&#x7C7B;&#x578B;</td><td><strong>string</strong></td></tr>
+</tbody></table>
+
+<h4 id="Service_localPort">localPort </h4>
+<p>&#x672C;&#x5730;&#x7AEF;&#x53E3;
+&#x7C7B;&#x578B;: <strong>number</strong></p>
+<table><thead><tr><th width="150">meta</th><th>description</th></tr></thead><tbody>
+<tr><td>&#x7C7B;&#x578B;</td><td><strong>number</strong></td></tr>
+</tbody></table>
+
 <h3 id="&#x65B9;&#x6CD5;">&#x65B9;&#x6CD5; </h3>
-<h4 id="start">start(name, retryTimes, req, opts) </h4>
-<p>start service</p>
+<h4 id="Service_getUsers">getUsers(type) </h4>
+<p>&#x83B7;&#x53D6;&#x7528;&#x6237;&#x5217;&#x8868;</p>
 <h6 id="&#x53C2;&#x6570;&#x5217;&#x8868;">&#x53C2;&#x6570;&#x5217;&#x8868;</h6>
 <ul>
-<li><p><code>name</code> <strong>string</strong>  service name</p>
-</li>
-<li><p><code>retryTimes</code> <strong>number</strong>  retry times</p>
-</li>
-<li><p><code>req</code> <a href="Request.html">Request</a> </p>
-</li>
-<li><p><code>opts</code> <strong>table</strong> </p>
-</li>
-<li><p><code>opts.easing</code> <strong>string</strong>  easing type</p>
-</li>
-<li><p><code>opts.duration</code> <strong>number</strong>  duration</p>
-</li>
+<li><code>type</code> <strong>string</strong>  &#x7528;&#x6237;&#x7C7B;&#x578B;</li>
 </ul>
 <h6 id="&#x8FD4;&#x56DE;&#x503C;">&#x8FD4;&#x56DE;&#x503C;</h6>
 <table>
@@ -270,28 +251,20 @@
 </thead>
 <tbody>
 <tr>
-<td><a href="Result.html">Result</a></td>
-<td>result</td>
+<td><strong>list</strong></td>
+<td>&#x7528;&#x6237; <a href="entities.html#User">User</a></td>
+</tr>
+<tr>
+<td><strong>list</strong></td>
+<td>&#x597D;&#x53CB; <a href="entities.html#Friend">Friend</a></td>
 </tr>
 </tbody>
 </table>
-<h4 id="getUsers">getUsers() </h4>
-<p>&#x83B7;&#x53D6;&#x6240;&#x6709;&#x7528;&#x6237;&#x5217;&#x8868;</p>
-<h6 id="&#x8FD4;&#x56DE;&#x503C;">&#x8FD4;&#x56DE;&#x503C;</h6>
-<table>
-<thead>
-<tr>
-<th>&#x7C7B;&#x578B;</th>
-<th>&#x63CF;&#x8FF0;</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><a href="entities/User.html">entities/User</a></td>
-<td>users</td>
-</tr>
-</tbody>
-</table>
+<h6 id="&#x793A;&#x4F8B;">&#x793A;&#x4F8B;</h6>
+<pre><code class="lang-lua">Service.getUsers(<span class="hljs-string">&quot;online&quot;</span>)
+</code></pre>
+<h4 id="Service_connect">connect() </h4>
+<p>&#x8FDE;&#x63A5;&#x670D;&#x52A1;</p>
 
                                 
                                 </section>
@@ -319,12 +292,12 @@
 
             
                 
-                <a href="Result.html" class="navigation navigation-prev " aria-label="Previous page: Result">
+                <a href="./" class="navigation navigation-prev " aria-label="Previous page: Introduction">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
                 
-                <a href="entities/init.html" class="navigation navigation-next " aria-label="Next page: entities">
+                <a href="entities.html" class="navigation navigation-next " aria-label="Next page: entities">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -335,7 +308,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Service","level":"1.4","depth":1,"next":{"title":"entities","level":"1.5","depth":1,"path":"entities/init.md","ref":"entities/init.md","articles":[{"title":"Friend","level":"1.5.1","depth":2,"path":"entities/Friend.md","ref":"entities/Friend.md","articles":[]},{"title":"User","level":"1.5.2","depth":2,"path":"entities/User.md","ref":"entities/User.md","articles":[]}]},"previous":{"title":"Result","level":"1.3","depth":1,"path":"Result.md","ref":"Result.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"Service.md","mtime":"2022-03-16T09:23:36.682Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-03-16T09:23:40.484Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Service","level":"1.2","depth":1,"next":{"title":"entities","level":"1.3","depth":1,"path":"entities.md","ref":"entities.md","articles":[]},"previous":{"title":"Introduction","level":"1.1","depth":1,"path":"README.md","ref":"README.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"Service.md","mtime":"2022-03-17T10:30:23.091Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-03-17T10:30:27.924Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>

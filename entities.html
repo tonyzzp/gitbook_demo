@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>Request · GitBook</title>
+        <title>entities · GitBook</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -57,10 +57,10 @@
     <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="Result.html" />
+    <link rel="next" href="phone/init.html" />
     
     
-    <link rel="prev" href="./" />
+    <link rel="prev" href="Service.html" />
     
 
     </head>
@@ -102,33 +102,7 @@
             
         </li>
     
-        <li class="chapter active" data-level="1.2" data-path="Request.html">
-            
-                <a href="Request.html">
-            
-                    
-                    Request
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="1.3" data-path="Result.html">
-            
-                <a href="Result.html">
-            
-                    
-                    Result
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="1.4" data-path="Service.html">
+        <li class="chapter " data-level="1.2" data-path="Service.html">
             
                 <a href="Service.html">
             
@@ -141,9 +115,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.5" data-path="entities/init.html">
+        <li class="chapter active" data-level="1.3" data-path="entities.html">
             
-                <a href="entities/init.html">
+                <a href="entities.html">
             
                     
                     entities
@@ -152,28 +126,28 @@
             
 
             
-            <ul class="articles">
-                
+        </li>
     
-        <li class="chapter " data-level="1.5.1" data-path="entities/Friend.html">
+        <li class="chapter " data-level="1.4" data-path="phone/init.html">
             
-                <a href="entities/Friend.html">
+                <a href="phone/init.html">
             
                     
-                    Friend
+                    phone
             
                 </a>
             
 
             
-        </li>
+            <ul class="articles">
+                
     
-        <li class="chapter " data-level="1.5.2" data-path="entities/User.html">
+        <li class="chapter " data-level="1.4.1" data-path="phone/PhoneService.html">
             
-                <a href="entities/User.html">
+                <a href="phone/PhoneService.html">
             
                     
-                    User
+                    PhoneService
             
                 </a>
             
@@ -216,7 +190,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href="." >Request</a>
+        <a href="." >entities</a>
     </h1>
 </div>
 
@@ -231,14 +205,76 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="request">Request</h1>
-<p>&#x8BF7;&#x6C42;</p>
+                                <ul>
+<li><a href="#User">User</a></li>
+<li><a href="#Friend">Friend</a></li>
+<li><a href="#System">System</a></li>
+</ul>
+<hr>
+<h1 id="User">User </h1>
+<p>&#x7528;&#x6237;&#x5B9E;&#x4F53;&#x7C7B;</p>
 <h2 id="&#x7D22;&#x5F15;">&#x7D22;&#x5F15;</h2>
 <h3 id="&#x5C5E;&#x6027;">&#x5C5E;&#x6027;</h3>
 <ul>
-<li><a href="#id">id</a> <strong>number</strong> &#x8BF7;&#x6C42;id</li>
+<li><code>name</code>  <strong>string</strong>  &#x59D3;&#x540D;</li>
+<li><code>age</code>  <strong>number</strong>  &#x5E74;&#x9F84;</li>
+<li><code>sex</code>  <strong>string</strong>  &#x6027;&#x522B;</li>
+<li><code>friends</code>  <strong>list</strong>  &#x597D;&#x53CB;<a href="#Friend">Friend</a></li>
+<li><code>extras</code>  <strong>table</strong>  &#x5176;&#x4ED6;&#x4FE1;&#x606F;<ul>
+<li><code>extras.province</code>  <strong>string</strong>  &#x7701;</li>
+<li><code>extras.city</code>  <strong>string</strong>  &#x57CE;&#x5E02;</li>
+</ul>
+</li>
+<li><code>summary</code>  <strong>string</strong>  &#x63CF;&#x8FF0;</li>
 </ul>
 <h2 id="&#x8BE6;&#x7EC6;&#x4FE1;&#x606F;">&#x8BE6;&#x7EC6;&#x4FE1;&#x606F;</h2>
+<pre><code class="lang-lua">user = {
+    name = <span class="hljs-string">&quot;zzp&quot;</span>,
+    age = <span class="hljs-number">18</span>,
+    sex = <span class="hljs-string">&quot;male&quot;</span>,
+    friends = [
+        {sex = <span class="hljs-string">&quot;male&quot;</span>, age = <span class="hljs-number">10</span>},
+        {sex = <span class="hljs-string">&quot;female&quot;</span>, age = <span class="hljs-number">100</span>}
+    ]
+}
+</code></pre>
+<hr>
+<h1 id="Friend">Friend </h1>
+<p>&#x7528;&#x6237;&#x4FE1;&#x606F;</p>
+<h2 id="&#x7D22;&#x5F15;">&#x7D22;&#x5F15;</h2>
+<h3 id="&#x5C5E;&#x6027;">&#x5C5E;&#x6027;</h3>
+<ul>
+<li><code>sex</code>  <strong>string</strong>  &#x6027;&#x522B;</li>
+<li><code>age</code>  <strong>number</strong>  &#x5E74;&#x9F84;</li>
+</ul>
+<h2 id="&#x8BE6;&#x7EC6;&#x4FE1;&#x606F;">&#x8BE6;&#x7EC6;&#x4FE1;&#x606F;</h2>
+<hr>
+<h1 id="System">System </h1>
+<p>&#x7CFB;&#x7EDF;&#x8C03;&#x7528;</p>
+<h2 id="&#x7D22;&#x5F15;">&#x7D22;&#x5F15;</h2>
+<h3 id="&#x5C5E;&#x6027;">&#x5C5E;&#x6027;</h3>
+<ul>
+<li><code>version</code>  <strong>string</strong>  &#x7CFB;&#x7EDF;&#x7248;&#x672C;&#x53F7;</li>
+</ul>
+<h3 id="&#x65B9;&#x6CD5;">&#x65B9;&#x6CD5;</h3>
+<ul>
+<li><a href="#System_exit">exit</a>  &#x9000;&#x51FA;</li>
+<li><a href="#System_openURL">openURL</a>  &#x6253;&#x5F00;&#x7F51;&#x9875;</li>
+</ul>
+<h2 id="&#x8BE6;&#x7EC6;&#x4FE1;&#x606F;">&#x8BE6;&#x7EC6;&#x4FE1;&#x606F;</h2>
+<h3 id="&#x65B9;&#x6CD5;">&#x65B9;&#x6CD5; </h3>
+<h4 id="System_exit">exit() </h4>
+<p>&#x9000;&#x51FA;</p>
+<h4 id="System_openURL">openURL(url) </h4>
+<p>&#x6253;&#x5F00;&#x7F51;&#x9875;</p>
+<h6 id="&#x53C2;&#x6570;&#x5217;&#x8868;">&#x53C2;&#x6570;&#x5217;&#x8868;</h6>
+<ul>
+<li><code>url</code> <strong>string</strong>  &#x7F51;&#x5740;</li>
+</ul>
+<h6 id="&#x793A;&#x4F8B;">&#x793A;&#x4F8B;</h6>
+<pre><code class="lang-lua">System.openURL(<span class="hljs-string">&quot;http://baidu.com&quot;</span>)
+</code></pre>
+<hr>
 
                                 
                                 </section>
@@ -266,12 +302,12 @@
 
             
                 
-                <a href="./" class="navigation navigation-prev " aria-label="Previous page: Introduction">
+                <a href="Service.html" class="navigation navigation-prev " aria-label="Previous page: Service">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
                 
-                <a href="Result.html" class="navigation navigation-next " aria-label="Next page: Result">
+                <a href="phone/init.html" class="navigation navigation-next " aria-label="Next page: phone">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -282,7 +318,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Request","level":"1.2","depth":1,"next":{"title":"Result","level":"1.3","depth":1,"path":"Result.md","ref":"Result.md","articles":[]},"previous":{"title":"Introduction","level":"1.1","depth":1,"path":"README.md","ref":"README.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"Request.md","mtime":"2022-03-16T09:23:36.681Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-03-16T09:23:40.484Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"entities","level":"1.3","depth":1,"next":{"title":"phone","level":"1.4","depth":1,"path":"phone/init.md","ref":"phone/init.md","articles":[{"title":"PhoneService","level":"1.4.1","depth":2,"path":"phone/PhoneService.md","ref":"phone/PhoneService.md","articles":[]}]},"previous":{"title":"Service","level":"1.2","depth":1,"path":"Service.md","ref":"Service.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"entities.md","mtime":"2022-03-17T10:30:23.088Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-03-17T10:30:27.924Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>
